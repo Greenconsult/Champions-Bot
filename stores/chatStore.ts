@@ -17,7 +17,7 @@ export const chatStore = (set: any, get: any): IChatStore => ({
     {
       id: uuidv4(),
       message:
-        'Hi there, how can I help you today?  My name is Hosanna, the official chatbot for HCC Church Worldwide and Amos Fenwa Ministries. I can tell you about our church services, branches, history, Amos Fenwa Ministries and lots more. Praise God, Lets Chat!',
+        'Hi there, how can I help you today?  My name is Gloria, the official chatbot for Champions Church. I can tell you about our church services, branches, history, and lots more. Praise God, Lets Chat!',
       type: MessageType.Bot
     }
   ],
