@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex gap-5">
           <a
-            href="https://www.facebook.com/HCCSolutionArena"
+            href="https://www.facebook.com/ChampionsChurchUK"
             target="_blank"
             className="shadow-sm shadow-white bg-white hover:shadow-blue hover:bg-blue transition-all  w-[40px] h-[40px] rounded-full flex justify-center items-center"
             rel="noreferrer"
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.youtube.com/channel/UCXseL16mRCPSXxIK5FApq0w"
+            href="https://www.youtube.com/user/championschurchuk"
             target="_blank"
             className="shadow-sm shadow-white  hover:shadow-blue gruop hover:bg-blue transition-all  w-[40px] h-[40px] rounded-full bg-white flex justify-center items-center"
             rel="noreferrer"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/hccsolutionarena"
+            href="https://www.instagram.com/champions_church"
             target="_blank"
             className="shadow-sm shadow-white  hover:shadow-blue group hover:bg-blue transition-all  w-[40px] h-[40px] rounded-full bg-white flex justify-center items-center"
             rel="noreferrer"
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="text-white text-center py-7 md:py-1.5 text-sm md:text-sm">
-        &copy; {new Date().getFullYear()} HolyGhost Christian Centre|
+        &copy; {new Date().getFullYear()} Champions Church|
         <br className="md:hidden" />
         App designed by Julius Odede.
       </div>
