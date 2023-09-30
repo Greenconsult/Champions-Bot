@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                   <button
                     className={`text-lg text-white font-bold justify-center items-center flex gap-1 px-[10px] py-[20px] cursor-pointer text-center rounded h-full bg-[#F05423] w-full`}
                   >
-                    Chat With Hosanna
+                    Chat With Gloria
                   </button>
                 </Link>
               </div>
