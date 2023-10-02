@@ -16,7 +16,7 @@ export interface IInformationStore {
 
 export const informationStore = (set: any, get: any): IInformationStore => ({
   list: [],
-  selectedlist: { namespace: 'hcc', title: 'Holyghost Christian Centre', type: '0' },
+  selectedlist: { namespace: 'champions-bot', title: 'Holyghost Christian Centre', type: '0' },
   setList: async (value: IList[]) => {
     set((state: ILangchainAppStore) => ({
       ...state,
