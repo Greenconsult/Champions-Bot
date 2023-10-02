@@ -17,9 +17,12 @@ const User: React.FC<UserProps> = ({ content, chatBot }) => {
   }, [value]);
   return (
     <div className="message user-message flex justify-end items-center gap-4 my-[10px]">
-      <div style={{ backgroundColor: value }} className={`message-content text-[15px] ${!chatBot && 'bg-[#1777ff]'}`}>
+      <div 
+        style={{ backgroundColor: '#BEA69F' }}
+        className={`message-content text-[15px] ${!chatBot && 'bg-[#1777ff]'}`} 
+      >
         {content}
-      </div>
+      </div>  
       <div className="user-avatar">
         <Image src={userImage} width={40} height={40} alt="Champions" />
       </div>
