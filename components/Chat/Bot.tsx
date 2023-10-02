@@ -18,7 +18,7 @@ async function fetchData(query: string, namespace: string, setResultChunks: Func
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      index: 'msc-ds-ai',
+      index: 'champions-bot',
       query: query,
       namespace: namespace
     })
@@ -76,7 +76,7 @@ const Bot: React.FC<BotProps> = ({ content, first }) => {
       <div>
         <Image src={chatIcon} width={40} height={40} alt="Champions" />
       </div>
-      <div id="result" className="message-content text-[15px]">
+      <div id="result" className="message-content text-[15px] sm:max-w-[200px] lg:max-w-[500px]">
         {!showContent && <div dangerouslySetInnerHTML={{ __html: resultChunks.join('') }} />}
         {showContent && <div dangerouslySetInnerHTML={{ __html: content }} />}
       </div>
