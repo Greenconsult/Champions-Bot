@@ -23,19 +23,19 @@ const Home: NextPage = () => {
             <div>
               <Image src={bannerImg} className="w-full" alt="Banner" />
             </div>
-            <Slider
+            {/* <Slider
               {...SlickSetting}
               afterChange={(currentTarget) => {
                 if (currentTarget === 0) {
                   setSelectedList({
-                    namespace: 'data_science',
-                    title: 'BSC Computer science',
+                    namespace: 'hcc',
+                    title: 'Holyghost Christian Centre',
                     type: '0'
                   });
                 } else {
                   setSelectedList({
-                    namespace: 'ai',
-                    title: 'MSC Data Science and AI',
+                    namespace: 'hcc',
+                    title: 'Amos Fenwa Ministries',
                     type: '1'
                   });
                 }
@@ -44,28 +44,42 @@ const Home: NextPage = () => {
             >
               <div className="">
                 <SlickComponent
-                  header="BSc Computer Science"
-                  paragraph="Hey, welcome to the chatbot app for the BSc Computer science course. The course aims to produce software developers
-                    who can seamlessly make the transition from University to the international computer industry.
-                    My name is JayBot. I can help you with general enquiries abou the course."
+                  header="HCC Worldwide"
+                  paragraph="Hi, welcome to the chatbot app for the Holyghost Christian Centre (HCC). HCC is a global church with branches around the world."
+                  img="../../../assets/img/icon/7.JPG"
                 />
               </div>
               <div className="">
                 <SlickComponent
-                  header="MSc Data Science and AI"
-                  paragraph="Hey, welcome to the chatbot app for the MSc Artificial Intelligence (AI) course. The MSc Data and Artificial Intelligence 
-                    are conversion MSc, for students from various disciplines.
-                    My name is JayBot. I can help you with general enquiries about the course."
+                  header="Amos Fenwa Ministries"
+                  paragraph="Hi, welcome to the chatbot app for Amos Fenwa Ministries. Amos Fenwa Ministries is a distinguished ministry 
+                    with a clear vision to raise and impact destinies."
+                  img="../../../assets/img/icon/2.jpg"
                 />
               </div>
-            </Slider> 
+              <div className="">
+                <SlickComponent header="" paragraph="" img="../../../assets/img/icon/3.jpg" />
+              </div>
+              <div className="">
+                <SlickComponent header="" paragraph="" img="../../../assets/img/icon/1.jpeg" />
+              </div>
+              <div className="">
+                <SlickComponent header="" paragraph="" img="../../../assets/img/icon/5.jpg" />
+              </div>
+              <div className="">
+                <SlickComponent header="" paragraph="" img="../../../assets/img/icon/6.jpg" />
+              </div>
+              <div className="">
+                <SlickComponent header="" paragraph="" img="../../../assets/img/icon/4.jpg" />
+              </div>
+            </Slider> */}
             <div className="flex-col justify-start items-start mt-10 gap-6 xl:gap-10 absolute left-[10%] sm:bottom-[30px] lg:bottom-0 z-[9999]">
               <div className="max-w-[225px] w-full">
                 <Link href="/qa">
                   <button
                     className={`text-lg text-white font-bold justify-center items-center flex gap-1 px-[10px] py-[20px] cursor-pointer text-center rounded h-full bg-[#F05423] w-full`}
                   >
-                    Chat With Gloria
+                    Chat With Hosanna
                   </button>
                 </Link>
               </div>
