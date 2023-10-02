@@ -28,14 +28,14 @@ const Home: NextPage = () => {
               afterChange={(currentTarget) => {
                 if (currentTarget === 0) {
                   setSelectedList({
-                    namespace: 'champions-bot',
-                    title: 'Welcome Home',
+                    namespace: 'data_science',
+                    title: 'BSC Computer science',
                     type: '0'
                   });
                 } else {
                   setSelectedList({
-                    namespace: 'champions-bot',
-                    title: 'Welcome Home',
+                    namespace: 'ai',
+                    title: 'MSC Data Science and AI',
                     type: '1'
                   });
                 }
@@ -44,12 +44,18 @@ const Home: NextPage = () => {
             >
               <div className="">
                 <SlickComponent
-                  header="Welcome Home"
+                  header="BSc Computer Science"
+                  paragraph="Hey, welcome to the chatbot app for the BSc Computer science course. The course aims to produce software developers
+                    who can seamlessly make the transition from University to the international computer industry.
+                    My name is JayBot. I can help you with general enquiries about the course."
                 />
               </div>
               <div className="">
                 <SlickComponent
-                  header="Welcome Home"
+                  header="MSc Data Science and AI"
+                  paragraph="Hey, welcome to the chatbot app for the MSc Artificial Intelligence (AI) course. The MSc Data and Artificial Intelligence 
+                    are conversion MSc, for students from various disciplines.
+                    My name is JayBot. I can help you with general enquiries about the course."
                 />
               </div>
             </Slider> 
