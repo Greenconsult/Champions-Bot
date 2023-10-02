@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import SlickComponent from '../components/Common/SlickSlider/SlickComponent';
 import { SlickSetting } from '../components/Common/SlickSlider/SlickSetting';
-/*import bannerImg from '../public/assets/img/image/banner.jpg';*/
+import bannerImg from '../public/assets/img/image/banner.jpg';
 import TopHeader from '../components/Common/TopHeader/index';
 import Footer from '../components/Footer';
 import langchainAppStore from '../stores';
@@ -19,11 +19,11 @@ const Home: NextPage = () => {
       <main>
         <div className="h-[100%] m-auto relative">
           <TopHeader className="relative z-10 px-6 2xl:px-[8rem] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" />
-        </*div>
+        </div>
             <div>
               <Image src={bannerImg} className="w-full" alt="Banner" />
-            </div>*/
-            <Slider
+            </div>
+           /* <Slider
               {...SlickSetting}
               afterChange={(currentTarget) => {
                 if (currentTarget === 0) {
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               <div className="">
                 <SlickComponent header="" paragraph="" img="../../../assets/img/icon/4.jpg" />
               </div>
-            </Slider> 
+            </Slider> */ 
             <div className="flex-col justify-start items-start mt-10 gap-6 xl:gap-10 absolute left-[10%] sm:bottom-[30px] lg:bottom-0 z-[9999]">
               <div className="max-w-[225px] w-full">
                 <Link href="/qa">
