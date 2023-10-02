@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="text-white text-center py-7 md:py-1.5 text-sm md:text-sm">
         &copy; {new Date().getFullYear()} Champions Church|
-      </br className="md:hidden" />
+      <br className="md:hidden" />
         All rights reserved.
       </div>
     </footer>
