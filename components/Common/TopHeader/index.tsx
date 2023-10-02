@@ -33,7 +33,7 @@ const Index = ({ bgColor }: any) => {
             <Image src={logo} className="w-full" alt="Champions" />
           </div>
         </Link>
-        <div className="xl:hidden bg-[#596781] w-20 rounded h-[70px] justify-center items-center flex">
+        <div className="xl:hidden bg-[#596781] w-12 rounded h-[40px] justify-center items-center flex">
           <button
             type="button"
             onClick={toggleMenu}
@@ -57,7 +57,7 @@ const Index = ({ bgColor }: any) => {
           <TopHeaderButton href="https://www.biblegateway.com" text="BIBLE" target="_blank" />
           <TopHeaderButton href="https://www.championschurch.org.uk/media" text="Church Media" target="_blank" />
         </div>
-        <div className={`xl:hidden shadow-2xl absolute top-[85px] right-0 p-[0px] ${showMenu ? 'block' : 'hidden'}`}>
+        <div className={`xl:hidden shadow-2xl absolute top-[85px] right-2 p-[0px] ${showMenu ? 'block' : 'hidden'}`}>
           <div className="drop-shadow-2xl xl:text-[#4c5758] text-black shadow-2xl md:bg-clip-padding rounded w-[180px] flex items-start gap-[5px] flex-col">
             <TopHeaderButton href="/" text="Home" mblBG={true} />
             <TopHeaderButton href="https://www.amazon.co.uk/DONT-NEED-MIRACLE-TOMORROW-TODAY/dp/B08C97TDCX/ref=sr_1_1?crid=CK52WRV6AF3E&keywords=mark+burchell&qid=1686130805&s=books&sprefix=mark+burchell2Cstripbooks2C60&sr=1-1" text="BOOKS" target="_blank" mblBG={true} />
