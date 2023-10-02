@@ -83,7 +83,7 @@ const InputBox: React.FC<InputBoxProps> = ({ chatBot = false, handleHeightChange
   return (
     <>
       {!chatBot && (
-        <div className={`${!chatBot && 'flex'} max-w-[700px]`}>
+        <div className={`${!chatBot && 'flex'} sm:px-[20px] md:px-0 max-w-[700px]`}>
           <div ref={parentDivRef} className={`${!chatBot ? 'flex-1 h-[45px]' : 'flex h-12'}  `}>
             <textarea
               ref={textareaRef}
@@ -95,7 +95,7 @@ const InputBox: React.FC<InputBoxProps> = ({ chatBot = false, handleHeightChange
             ></textarea>
           </div>
           <button
-            style={{ backgroundColor: value }}
+            style={{ backgroundColor: '#44557B' }}
             className={`px-2 text-white bg-blue-500 hover:bg-blue-600 focus:outline-none`}
             onClick={handleSendClick}
           >
