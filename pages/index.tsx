@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                   header="BSc Computer Science"
                   paragraph="Hey, welcome to the chatbot app for the BSc Computer science course. The course aims to produce software developers
                     who can seamlessly make the transition from University to the international computer industry.
-                    My name is JayBot. I can help you with general enquiries about the course."
+                    My name is JayBot. I can help you with general enquiries abou the course."
                 />
               </div>
               <div className="">
