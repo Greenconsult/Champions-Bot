@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             <div>
               <Image src={bannerImg} className="w-full" alt="Banner" />
             </div>
-            {/* <Slider
+            <Slider
               {...SlickSetting}
               afterChange={(currentTarget) => {
                 if (currentTarget === 0) {
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               <div className="">
                 <SlickComponent header="" paragraph="" img="../../../assets/img/icon/4.jpg" />
               </div>
-            </Slider> */}
+            </Slider> 
             <div className="flex-col justify-start items-start mt-10 gap-6 xl:gap-10 absolute left-[10%] sm:bottom-[30px] lg:bottom-0 z-[9999]">
               <div className="max-w-[225px] w-full">
                 <Link href="/qa">
