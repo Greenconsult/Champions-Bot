@@ -12,7 +12,7 @@ type BotProps = {
 
 async function fetchData(query: string, namespace: string, setResultChunks: Function) {
   const token = localStorage.getItem('token');
-  const response = await fetch(`${process.env.REACT_APP_FETCH_URL}/api/pinecone/query/modification/index/namespace`, {
+  const response = await fetch(`${process.env.REACT_APP_FETCH_URL}/api/pinecone/query/modification/index`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -20,7 +20,6 @@ async function fetchData(query: string, namespace: string, setResultChunks: Func
     body: JSON.stringify({
       index: 'champions-bot',
       query: query,
-      namespace: namespace
     })
   });
 
@@ -51,7 +50,7 @@ const Bot: React.FC<BotProps> = ({ content, first }) => {
 
   useEffect(() => {
     const fetchBotData = async () => {
-      const message = await fetchData(lastQuery.message, selectedlist.namespace, setResultChunks);
+      const message = await fetchData(lastQuery.message, selectedlist.index, setResultChunks);
       lastChat.message = message;
       updateLastChat(lastChat);
       updateLastQuery({ message: lastQuery.message, done: true });
