@@ -2,7 +2,7 @@
 import { ILangchainAppStore } from './index';
 
 export interface IList {
-  namespace: string;
+  index: string;
   title: string;
   type: string;
 }
@@ -16,7 +16,7 @@ export interface IInformationStore {
 
 export const informationStore = (set: any, get: any): IInformationStore => ({
   list: [],
-  selectedlist: { namespace: 'champions-bot', title: 'Holyghost Christian Centre', type: '0' },
+  selectedlist: { index: 'champions-bot', title: 'Champions', type: '0' },
   setList: async (value: IList[]) => {
     set((state: ILangchainAppStore) => ({
       ...state,
