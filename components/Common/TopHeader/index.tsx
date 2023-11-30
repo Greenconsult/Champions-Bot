@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import hmIcon from '../../../public/assets/img/icon/Mini Logo icon.png';
+import hmIcon from '../../../public/assets/img/icon/WH Icon.png';
 import logo from '../../../public/assets/img/image/icon.png';
 import closeIcon from '../../../public/assets/img/icon/close Icon.svg';
 import openIcon from '../../../public/assets/img/icon/open icon.svg';
