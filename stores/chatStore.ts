@@ -1,4 +1,4 @@
-//Store
+
 import { ILangchainAppStore } from './index';
 import { IChat, ILastQuery, MessageType } from '../models/Types';
 import { v4 as uuidv4 } from 'uuid';
