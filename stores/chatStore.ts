@@ -1,4 +1,4 @@
-
+//Store
 import { ILangchainAppStore } from './index';
 import { IChat, ILastQuery, MessageType } from '../models/Types';
 import { v4 as uuidv4 } from 'uuid';
@@ -17,7 +17,7 @@ export const chatStore = (set: any, get: any): IChatStore => ({
     {
       id: uuidv4(),
       message:
-        'Hello there, how can I help you today?,
+        'Hi there, how can I help you today?',
       type: MessageType.Bot
     }
   ],
