@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-center bg-blue">
+    /*<footer className="text-center bg-blue">
       <div className="flex flex-wrap py-[30px] items-center justify-start gap-5 gap-[15px] w-[100%]">
         <div className="text-white font-os text-center">
           <span className="text-[20px]">Connect With US: </span>
@@ -53,10 +53,10 @@ const Footer: React.FC = () => {
               </g>
             </svg>
           </a>
-        </div>
+        </div>*/
       </div>
       <div className="text-white text-center py-7 md:py-1.5 text-sm md:text-sm">
-        &copy; {new Date().getFullYear()} Champions Church|
+        &copy; {new Date().getFullYear()} Camp Bot|
       <br className="md:hidden" />
         All rights reserved.
       </div>
