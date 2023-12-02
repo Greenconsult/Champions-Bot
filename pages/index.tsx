@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 
   return (
     <>      
-      <main>
+     <main>
         <div className="h-[100%] m-auto relative">
           <TopHeader className="relative z-10 px-6 2xl:px-[8rem] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" />
           <div>
