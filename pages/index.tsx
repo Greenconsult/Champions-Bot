@@ -12,13 +12,28 @@ import Footer from '../components/Footer';
 import langchainAppStore from '../stores';
 import Image from 'next/image';
 
+// PopUp component
+const PopUp = ({ onClose }) => {
+  return (
+    <div className="popup">
+      <p>Would you like to chat?</p>
+      <button onClick={onClose}>Close</button>
+    </div>
+  );
+};
+
 const Home: NextPage = () => {
   const setSelectedList = langchainAppStore((state: any) => state.informationStore.setSelectedList);
+  const [showPopUp, setShowPopUp] = useState(false);
 
   // Function to show the chat pop-up
   const showChatPopUp = () => {
-    // Replace this alert with your actual pop-up implementation
-    alert('Hi there, Would you like to chat? click on camp bot below');
+    setShowPopUp(true);
+  };
+
+  // Function to close the pop-up
+  const closePopUp = () => {
+    setShowPopUp(false);
   };
 
   useEffect(() => {
@@ -32,8 +47,7 @@ const Home: NextPage = () => {
   }, []); // The empty dependency array ensures this effect runs only once when the component mounts
 
   return (
-    <>
-      <main>
+    <>      <main>
         <div className="h-[100%] m-auto relative">
           <TopHeader className="relative z-10 px-6 2xl:px-[8rem] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" />
           <div>
@@ -105,6 +119,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      {showPopUp && <PopUp onClose={closePopUp} />}
     </>
   );
 };
