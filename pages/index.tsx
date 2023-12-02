@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
@@ -13,6 +14,22 @@ import Image from 'next/image';
 
 const Home: NextPage = () => {
   const setSelectedList = langchainAppStore((state: any) => state.informationStore.setSelectedList);
+
+  // Function to show the chat pop-up
+  const showChatPopUp = () => {
+    // Replace this alert with your actual pop-up implementation
+    alert('Would you like to chat?');
+  };
+
+  useEffect(() => {
+    // Set a timeout to show the pop-up after 10 seconds
+    const timeoutId = setTimeout(() => {
+      showChatPopUp();
+    }, 10000);
+
+    // Clear the timeout if the component is unmounted or if you navigate away
+    return () => clearTimeout(timeoutId);
+  }, []); // The empty dependency array ensures this effect runs only once when the component mounts
 
   return (
     <>
