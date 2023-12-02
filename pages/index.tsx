@@ -120,7 +120,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      {showPopUp && <PopUp onClose={closePopUp} />}
     </>
   );
 };
