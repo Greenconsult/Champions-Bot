@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Champions Church</title>
-        <meta name="description" content="Champions Church" />
+        <title>Camp Bot</title>
+        <meta name="description" content="Campus Bot" />
         <link rel="shortcut icon" href="https://storage2.snappages.site/JRCQ7S/assets/favicon.png" />
       </Head>
 
