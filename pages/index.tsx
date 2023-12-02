@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   // Function to show the chat pop-up
   const showChatPopUp = () => {
     // Replace this alert with your actual pop-up implementation
-    alert('Would you like to chat?');
+    alert('Hi there, Would you like to chat? click on camp bot below');
   };
 
   useEffect(() => {
