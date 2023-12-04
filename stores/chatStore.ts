@@ -17,7 +17,7 @@ export const chatStore = (set: any, get: any): IChatStore => ({
     {
       id: uuidv4(),
       message:
-        'Hello, my name is CampBot! I am here to assist you with any queries you might have about the University of Wolverhampton four campuses..City Campus, Telford Campus, Walsall Campus, and Springfield Campus. I can provide detailed information, addresses, postcodes, links to virtual tours, accommodation details, and campus facilities. Let's chat!',
+        'Hello, my name is CampBot! I am here to assist you with any queries you might have about the University of Wolverhampton four campuses. City Campus, Telford Campus, Walsall Campus, and Springfield Campus. I can provide detailed information, addresses, postcodes, links to virtual tours, accommodation details, and campus facilities. Let's chat!',
       type: MessageType.Bot
     }
   ],
